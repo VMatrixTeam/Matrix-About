@@ -11,8 +11,13 @@ body {
   color: #676a6c;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
-span.navy {
+.text-center span.navy {
   color: #1ab394;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: inline-block;
+  font-size: 20pt
+
 }
 p.text-color {
   color: #676a6c;
@@ -146,20 +151,29 @@ h1 {
 /* BACKGROUNDS SLIDER
 -------------------------------------------------- */
 .header-back {
-  height: 470px;
+  height: 600px;
   width: 100%;
 }
 .header-back.one {
-  background: url('../img/header_one.jpg') 50% 0 no-repeat;
+  background: url('../img/header_one.jpg') 50% 80% no-repeat;
+  background-size:cover;
 }
 .header-back.two {
-  background: url('../img/header_two.jpg') 50% 0 no-repeat;
+  background: url('../img/header_two.jpg') 50% 50% no-repeat;
+  background-size:cover;
 }
+.perspective {
+  background: url(./perspective.png) -120% -83% no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 404px;
+  background-position: 60% 3%;
+  }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 470px;
+  height: 600px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -167,7 +181,7 @@ h1 {
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 470px;
+  height: 600px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -175,7 +189,7 @@ h1 {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 470px;
+  height: 600px;
 }
 .carousel-fade .carousel-inner .item {
   opacity: 0;
@@ -232,8 +246,8 @@ h1 {
 }
 .carousel-image {
   position: absolute;
-  right: 10px;
-  top: 150px;
+  left: 20%;
+  top: -22px;
 }
 .carousel-indicators {
   padding-right: 60px;
@@ -271,6 +285,7 @@ h1 {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .features-block {
   margin-top: 40px;
 }
@@ -293,6 +308,9 @@ h1 {
 .features-icon {
   color: #1ab394;
   font-size: 40px;
+}
+.features .container {
+  padding-bottom: 70px
 }
 .navy-section {
   margin-top: 60px;
@@ -361,7 +379,6 @@ li.pricing-title {
   padding-top: 80px;
   padding-bottom: 90px;
   background-color: #1ab394;
-  background-image: url('../img/avatar_all.png');
 }
 .big-icon {
   font-size: 56px;
@@ -370,7 +387,6 @@ li.pricing-title {
   color: #1ab394;
 }
 .contact {
-  background-image: url('../img/word_map.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-top: 60px;
@@ -456,6 +472,9 @@ fieldset[disabled] .btn-primary.active {
   }
   .featurette-heading {
     font-size: 50px;
+  }
+  .features .main-content div:first-child {
+    margin-bottom: 90px;
   }
 }
 @media (max-width: 992px) {
@@ -998,9 +1017,10 @@ section.comments {
 }
 @media only screen and (min-width: 1170px) {
   .center-orientation .vertical-timeline-content {
-    margin-left: 0;
+    margin-left: 7%;
+    margin-right: 7%;
     padding: 1.6em;
-    width: 45%;
+    width: 38%;
   }
   .center-orientation .vertical-timeline-content::before {
     top: 24px;
