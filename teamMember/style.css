@@ -163,7 +163,7 @@ h1 {
   background-size:cover;
 }
 .perspective {
-  background: url(./perspective.png) -120% -83% no-repeat;
+  background: url(../img/perspective.png) -120% -83% no-repeat;
   background-size: cover;
   width: 100%;
   height: 404px;
