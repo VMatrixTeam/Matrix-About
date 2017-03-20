@@ -151,11 +151,13 @@ h1 {
 /* BACKGROUNDS SLIDER
 -------------------------------------------------- */
 .header-back {
-  height: 600px;
+  height: 470px;
   width: 100%;
 }
 .header-back.one {
-  background: url('../img/header_one.jpg') 50% 80% no-repeat;
+  background: url('../img/header_one.jpg') 50% 70% no-repeat;
+  width: 100%;
+  height: 470px;
   background-size:cover;
 }
 .header-back.two {
@@ -173,7 +175,7 @@ h1 {
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 600px;
+  height: 470px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -181,7 +183,7 @@ h1 {
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 600px;
+  height: 470px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -189,7 +191,7 @@ h1 {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 600px;
+  height: 470px;
 }
 .carousel-fade .carousel-inner .item {
   opacity: 0;
@@ -246,8 +248,8 @@ h1 {
 }
 .carousel-image {
   position: absolute;
-  left: 20%;
-  top: -22px;
+  left: 22%;
+  top: 40px;
 }
 .carousel-indicators {
   padding-right: 60px;
@@ -803,6 +805,10 @@ section.timeline {
 }
 section.comments {
   padding-bottom: 80px;
+}
+.first-session {
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 .comments-avatar {
   margin-top: 25px;
