@@ -1,0 +1,7 @@
+deploy:
+  stage: build
+  only:
+    - master
+  script:
+    - docker exec matrix_about rm -rf /root/about
+    - docker cp ./ matrix_about:/root/about
