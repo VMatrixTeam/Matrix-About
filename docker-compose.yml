@@ -1,0 +1,17 @@
+version: '1'
+
+services:
+  matrix_about:
+    build: .
+    image: about-nginx
+    ports:
+      - 4000:80
+    command: nginx -g 'daemon off
+    container_name: about
+    volumes:
+      - ./log:/var/nginx/log  
+    restart: always
+
+      
+
+
