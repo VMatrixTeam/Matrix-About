@@ -7,7 +7,7 @@ services:
     ports:
       - 8100:80
     command: nginx -g 'daemon off;'
-    container_name: about
+    container_name: matrix_about
     volumes:
       - /var/log/nginx:/var/log/nginx
     restart: always
