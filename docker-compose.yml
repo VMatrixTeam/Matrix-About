@@ -11,7 +11,6 @@ services:
     volumes:
       - /var/log/nginx:/var/log/nginx
     restart: always
-    tty: true
 
       
 
