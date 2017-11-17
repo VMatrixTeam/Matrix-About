@@ -12,6 +12,3 @@ services:
       - /var/log/nginx:/var/log/nginx
     restart: always
 
-      
-
-

@@ -1,7 +1,6 @@
-FROM library/nginx
+FROM nginx
 
-COPY fonts \
-     teamMember \
-     img \
-     index.html \
-     /usr/share/nginx/html/
+COPY . /usr/share/nginx/html/
+RUN rm  /usr/share/nginx/html/*.yml \
+        /usr/share/nginx/html/Dockerfile \
+        /usr/share/nginx/html/*.md
