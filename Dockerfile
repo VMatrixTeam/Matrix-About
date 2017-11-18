@@ -1,4 +1,4 @@
-FROM nginx
+FROM library/nginx
 
 COPY . /usr/share/nginx/html/
 RUN rm  /usr/share/nginx/html/*.yml \
