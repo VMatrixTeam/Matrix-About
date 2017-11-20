@@ -22,7 +22,7 @@
 
 删除镜像
 
-##构建方法二
+## 构建方法二
 使用docker-compose
 
 > docker-compose up -d
