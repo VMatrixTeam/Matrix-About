@@ -9,6 +9,6 @@ services:
     command: nginx -g 'daemon off;'
     container_name: matrix_about
     volumes:
-      - /var/log/nginx:/var/log/nginx
+      - /var/log/nginx/about:/var/log/nginx
     restart: always
 
