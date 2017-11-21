@@ -11,9 +11,4 @@ services:
     container_name: matrix_about
     volumes:
       - /var/log/nginx/about:/var/log/nginx
-<<<<<<< HEAD
     restart: always
-
-=======
-    restart: always 
->>>>>>> a5c562c4ab3ef46e976db923da728ca955acbf90
