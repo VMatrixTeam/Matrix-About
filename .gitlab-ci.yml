@@ -3,6 +3,7 @@ deploy:
   only:
     - test
   script:
-    - git pull
+    - git branch -vv
+    - git pull origin test:test
     - docker exec matrix_about rm -rf /usr/share/nginx/html
     - docker cp src/. matrix_about:/usr/share/nginx/html
