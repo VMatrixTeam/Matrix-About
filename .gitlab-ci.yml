@@ -1,7 +1,7 @@
 deploy:
   stage: build
   only:
-    - master
+    - test
   script:
-    - docker exec matrix_about rm -rf /root/about
-    - docker cp ./ matrix_about:/root/about
+    - docker exec matrix_about rm -rf /usr/share/nginx/html
+    - docker cp src/. matrix_about:/usr/share/nginx/html
