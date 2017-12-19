@@ -6,7 +6,8 @@ services:
     build: .
     image: about-nginx
     ports:
-      - 8100:80
+      - 80:80
+      - 443:80
     command: nginx -g 'daemon off;'
     container_name: matrix_about
     volumes:
