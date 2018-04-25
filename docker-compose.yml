@@ -1,4 +1,3 @@
-
 version: '2'
 
 services:
@@ -6,10 +5,12 @@ services:
     build: .
     image: about-nginx
     ports:
-      - 80:80
-      - 443:80
+      - 8100:80
     command: nginx -g 'daemon off;'
     container_name: matrix_about
+    environment:
+      - LANG=C.UTF-8
     volumes:
+      - /home/matrix/about/volume:/usr/share/nginx/html
       - /var/log/nginx/about:/var/log/nginx
     restart: always
